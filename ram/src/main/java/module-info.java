@@ -1,7 +1,7 @@
 module com.jmc.mazebank {
     requires javafx.controls;
     requires javafx.fxml;
-    requires fontawesomefx;
+    requires de.jensd.fx.glyphs.fontawesome;
     requires java.sql;
     requires org.xerial.sqlitejdbc;
 
