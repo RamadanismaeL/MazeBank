@@ -8,8 +8,10 @@ import java.io.IOException;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 public class App extends Application {
 
@@ -17,9 +19,9 @@ public class App extends Application {
     @Override
     public void start(Stage stage) {        
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/jmc/mazebank/Fxml/Login.fxml"));
-            Scene scene = new Scene(fxmlLoader.load());
-            //stage.initStyle(StageStyle.TRANSPARENT);
+            Parent root = FXMLLoader.load(getClass().getResource("/com/jmc/mazebank/Fxml/Login.fxml"));
+            Scene scene = new Scene(root);
+            stage.initStyle(StageStyle.TRANSPARENT);
             stage.setScene(scene);
             stage.show();
         } catch (IOException e) {
