@@ -19,7 +19,7 @@ public class App extends Application {
     @Override
     public void start(Stage stage) {        
         try {
-            Parent root = FXMLLoader.load(getClass().getResource("/com/jmc/mazebank/Fxml/Login.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("/com/jmc/mazebank/Controllers/Login.fxml"));
             Scene scene = new Scene(root);
             stage.initStyle(StageStyle.TRANSPARENT);
             stage.setScene(scene);

@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="login_container" stylesheets="@../Styles/login.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="login_container" stylesheets="@../Styles/login.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jmc.mazebank.Controllers.LoginController">
    <children>
       <VBox layoutX="14.0" layoutY="67.0" prefHeight="400.0" prefWidth="207.0" styleClass="login_logo_container" stylesheets="@../Styles/login.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -35,7 +35,7 @@
             <Label fx:id="error_lbl" styleClass="error_lbl" stylesheets="@../Styles/login.css" text="Error:" />
          </children>
       </VBox>
-      <Button fx:id="close_btn" layoutX="546.0" layoutY="2.0" mnemonicParsing="false" styleClass="close" stylesheets="@../Styles/login.css" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <Button fx:id="close_btn" layoutX="546.0" layoutY="2.0" mnemonicParsing="false" onAction="#close" styleClass="close" stylesheets="@../Styles/login.css" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <graphic>
             <FontAwesomeIconView glyphName="CLOSE" size="1.4em" />
          </graphic>

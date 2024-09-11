@@ -11,7 +11,6 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
 public class LoginController {
-
     @FXML
     private ChoiceBox<?> acc_selector;
 
@@ -31,10 +30,10 @@ public class LoginController {
     private TextField payee_address_fld;
 
     @FXML
-    private Label payee_address_lbl;    
+    private Label payee_address_lbl;
 
     @FXML
-    private void handleButtonClick() {
-        System.out.println("Button cliecked!");
+    private void close() {
+        System.exit(0);
     }
 }
