@@ -15,7 +15,8 @@
          <children>
             <FontAwesomeIcon glyphName="BANK" size="3em" />
             <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Maze Bank" />
-         </children></VBox>
+         </children>
+      </VBox>
       <VBox layoutX="325.0" layoutY="94.0" prefHeight="300.0" prefWidth="350.0" styleClass="login_form_container" stylesheets="@../Styles/login.css" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
          <children>
             <Label id="choice-prompt-text" stylesheets="@../Styles/login.css" text="Choose Your Account Type:" />
