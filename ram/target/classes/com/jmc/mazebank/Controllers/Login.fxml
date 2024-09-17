@@ -32,7 +32,7 @@
             <Label text="Password:" />
             <TextField fx:id="password_fld" styleClass="input_field" stylesheets="@../Styles/login.css" />
             <Button fx:id="login_btn" mnemonicParsing="false" text="Login" />
-            <Label fx:id="error_lbl" styleClass="error_lbl" stylesheets="@../Styles/login.css" text="Error:" />
+            <Label fx:id="error_lbl" styleClass="error_lbl" stylesheets="@../Styles/login.css" />
          </children>
       </VBox>
       <Button fx:id="close_btn" layoutX="546.0" layoutY="2.0" mnemonicParsing="false" onAction="#close" styleClass="close" stylesheets="@../Styles/login.css" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
