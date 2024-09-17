@@ -4,21 +4,18 @@
 
 package com.jmc.mazebank;
 
-import java.io.IOException;
-
+import com.jmc.mazebank.Models.Model;
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
 
 public class App extends Application {
 
     @SuppressWarnings("exports")
     @Override
-    public void start(Stage stage) {        
-        try {
+    public void start(Stage stage) { 
+        Model.getInstance().getViewsFactory().showLoginWindow();
+        
+        /*try {
             Parent root = FXMLLoader.load(getClass().getResource("/com/jmc/mazebank/Controllers/Login.fxml"));
             Scene scene = new Scene(root);
             stage.initStyle(StageStyle.TRANSPARENT);
@@ -30,7 +27,7 @@ public class App extends Application {
         } catch (Exception e) {
             System.err.println("Erro inesperado: " + e.getMessage());
             e.printStackTrace();
-        }
+        }*/
     }
 
     public static void main(String[] args) {

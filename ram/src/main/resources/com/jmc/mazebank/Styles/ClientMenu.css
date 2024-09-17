@@ -16,7 +16,7 @@
 /* Tittle/Logo Section */
 .title_container {
     -fx-background-color: #FFFFFF;
-    -fx-background-color: 20 20 0 0;
+    -fx-border-width: 20 20 0 0;
     -fx-alignment: top_center;
     -fx-padding: 10;
 }

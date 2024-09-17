@@ -4,6 +4,14 @@
 
 package com.jmc.mazebank.Controllers.Client;
 
-public class ClientController {
+import java.net.URL;
+import java.util.ResourceBundle;
+
+import javafx.fxml.Initializable;
+
+public class ClientController implements Initializable {
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {}
     
 }
