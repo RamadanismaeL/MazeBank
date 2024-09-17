@@ -31,7 +31,7 @@
             <TextField fx:id="payee_address_fld" styleClass="input_field" stylesheets="@../Styles/login.css" />
             <Label text="Password:" />
             <TextField fx:id="password_fld" styleClass="input_field" stylesheets="@../Styles/login.css" />
-            <Button fx:id="login_btn" mnemonicParsing="false" text="Button" />
+            <Button fx:id="login_btn" mnemonicParsing="false" text="Login" />
             <Label fx:id="error_lbl" styleClass="error_lbl" stylesheets="@../Styles/login.css" text="Error:" />
          </children>
       </VBox>
