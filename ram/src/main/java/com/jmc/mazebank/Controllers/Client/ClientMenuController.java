@@ -8,6 +8,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 import com.jmc.mazebank.Models.Model;
+import com.jmc.mazebank.Views.ClientMenuOptions;
 
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -38,14 +39,14 @@ public class ClientMenuController implements Initializable {
     }
 
     private void onDashboard() {
-        Model.getInstance().getViewsFactory().getClientSelectedMenuItem().set("Dashboard");
+        Model.getInstance().getViewsFactory().getClientSelectedMenuItem().set(ClientMenuOptions.DASHBOARD);
     }
 
     private void onTransaction() {
-        Model.getInstance().getViewsFactory().getClientSelectedMenuItem().set("Transactions");
+        Model.getInstance().getViewsFactory().getClientSelectedMenuItem().set(ClientMenuOptions.TRANSACTIONS);
     }
 
     private void onAcconts() {
-        Model.getInstance().getViewsFactory().getClientSelectedMenuItem().set("Accounts");
+        Model.getInstance().getViewsFactory().getClientSelectedMenuItem().set(ClientMenuOptions.ACCOUNTS);
     }
 }
